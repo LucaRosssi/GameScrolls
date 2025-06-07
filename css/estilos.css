@@ -1,0 +1,219 @@
+:root {
+    --primary-text-color: rgb(0, 0, 0);
+    --sidebar-hover-bg-color: #7c3c11;
+    --sidebar-hover-text-color: #3e1b04;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';    
+}
+
+/*Utilidades*/
+
+.escala {
+  display: inline-block;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.escala:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.href-normalizado {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}	
+
+.list-nonstyled {
+    list-style: none;
+}
+
+.h2-titulos {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.card-bckgrnd {
+    background-color: #a7a5a556;
+    border-radius: 12px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/*Nav*/
+
+header {
+    background-color: #3e1b04;
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 60px;
+    padding: 10px;
+    font-size: 1.2rem;
+    /* Prevents content from overflowing the header */
+    overflow: hidden;
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+    padding: 3px 0px 3px 10px;
+}
+
+.navbar {
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    /* Adds spacing between navigation items */
+    gap: 20px;
+}
+
+.navbar a {
+    padding: 20px;
+    margin: 10px;
+    color: aliceblue;
+    transition: color 0.1s;
+}
+
+.navbar a:hover {
+    color: #c6bb7f;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+/*Main*/
+
+main {
+    flex: 1;
+    min-width: 0;
+    background-color: #f9f6ef;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem !important;
+    color: #3e1b04;
+    padding: 30px 0;
+}
+
+.description {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 20px;
+    color: var(--primary-text-color);
+}
+
+.last-guide {
+    margin-top: 40px;
+}
+
+.guide-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.news-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.descripcion {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: justify;
+    color: #2e2e2e;
+    background-color: #fffdf9;
+    padding: 20px;
+    border-left: 4px solid #a3531d;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+}
+
+.guide-portada {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.guide-portada:hover {
+    box-shadow: 0 0 10px rgb(107, 110, 110), 0 0 10px rgb(107, 110, 110); /* Más brillo al pasar el mouse */
+}
+
+.popular-guides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.guide-card-popular {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-container {               /* Ocupa toda la altura de la ventana */
+    display: flex;                 /* Activar Flexbox */
+    justify-content: center;      /* Centra horizontalmente */
+    margin-top: 20px;  
+    padding-bottom: 50px;        /* Centra verticalmente */
+}
+
+.btn2 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: var(--primary-text-color);
+    background-color: #fcfcfc;
+    border: 5px solid #3e1b04;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.btn2:hover {
+    transform: translateY(-10px);
+    background-color: #3e1b04;
+    color: #fcfcfc;
+}
+
+/*footer*/
+
+.footer-content {
+    background-color: #3e1b04;
+    color: #fcfcfc;
+    padding: 20px;
+    text-align: center;
+}
