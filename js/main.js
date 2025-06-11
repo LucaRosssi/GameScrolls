@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
             case "ps3":
                 filterByConsola("ps3");
                 break;
+            case "pc":
+                filterByConsola("pc");
+                break;
             case "a-z":
                 sortCards(true);
                 break;
