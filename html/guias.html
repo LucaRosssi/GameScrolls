@@ -38,19 +38,16 @@
 <body>
     <header>
             <a href="index.html">
-                <img src="../assets/logo-gamescrolls.png" alt="Game Scrolls Logo" class="logo escala">
+                <img src="../assets/logo-gamescrolls.png" alt="logo GameScrolls" class="logo escala">
             </a>
             <nav class="navbar">
                 <a href="../index.html" class="escala href-normalizado">Inicio</a>
-                <a href="guias.html" class="escala href-normalizado">Guías</a>
-                <a href="foro.html" class="escala href-normalizado">Discusión</a>
-                <!--<a href="html/usuario.html" class="escala" title="Perfil de usuario"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>>-->
+                <a href="../html/guias.html" class="escala href-normalizado">Guías</a>
+                <a href="../html/foro.html" class="escala href-normalizado">Discusión</a>
+                <i class="fa fa-user-circle fa-2x user-icon escala onclick" aria-hidden="true" id="user"></i>
             </nav>
     </header>
     <main>
-            <section class="h2-titulos">
-                <h2>Buscar</h2>
-            </section>
             <section class="buscador">
                 <input type="text" id="search-input" placeholder="Buscar guías..." class="search-bar">
             </section>
@@ -67,79 +64,8 @@
                 -->
             </section>
             <section>
-                <div class="popular-guides card-bckgrnd">
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/kh1ps2.jpg" alt="Kingdom Hearts" class="guide-portada">
-                                <p>Kingdom Hearts</p>
-                         </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/recodeveronicax.jpg" alt="Resident Evil" class="guide-portada">
-                                <p>Resident Evil: Code Veronica X</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps3" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/ds2.jpg" alt="Dark Souls 2" class="guide-portada">
-                                <p>Dark Souls 2: Scholar of the First Sin</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/crash-twinsanity.jpg" alt="Crash Twinsanity" class="guide-portada">
-                                <p>Crash Twinsanity</p>
-                         </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/dbz-bt-3.jpg" alt="DBZ: Budokai Tenkaichi 3" class="guide-portada">
-                                <p>DBZ: Budokai Tenkaichi 3</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado" data-consola="ps2">
-                            <img src="../assets/portadas/dmc.jpg" alt="Devil May Cry" class="guide-portada">
-                                <p>Devil May Cry</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala"  data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/god-of-war.jpg" alt="God of War" class="guide-portada">
-                                <p>God of War</p>
-                         </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/jak-daxter.jpg" alt="Jak and Daxter" class="guide-portada">
-                                <p>Jak and Daxter</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/kh2fmps2.jpg" alt="Kingdom Hearts 2: Final Mix" class="guide-portada">
-                                <p>Kingdom Hearts 2: Final Mix</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/kh-com-ps2.jpg" alt="Kingdom Hearts Chain of Memories" class="guide-portada">
-                                <p>Kingdom Hearts: Chain of Memories</p>
-                         </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="ps2" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/persona3.jpg" alt="Persona 3" class="guide-portada">
-                                <p>Persona 3</p>
-                        </a>
-                    </div>
-                    <div class="guide-card-popular escala" data-consola="pc" data-fecha="">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="href-normalizado">
-                            <img src="../assets/portadas/hl2.jpg" alt="Half Life 2" class="guide-portada">
-                                <p>Half Life 2</p>
-                        </a>
-                    </div>
+                <div class="popular-guides card-bckgrnd" id="contenedor">
+                    
                 </div>
             </section>
                 <div class="btn-container">
@@ -147,6 +73,12 @@
                 </div>
         </div>
     </main>
-    <script src="../js/main.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Game Scrolls. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/guide.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/cardfilter.js"></script>
 </body>
 </html>

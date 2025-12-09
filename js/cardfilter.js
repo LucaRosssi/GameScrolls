@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listeners for buttons and search input
     document.querySelector(".btn-container").addEventListener("click", e => {
-        if (!e.target.classList.contains("btn2")) return;
-        const text = e.target.textContent.toLowerCase();
+        if (!e.target.classList.contains("btn2")) return; // Ensure the clicked element is a button
+        const text = e.target.textContent.toLowerCase(); // Get the text of the clicked button
 
         switch (text) {
             case "ps2":
