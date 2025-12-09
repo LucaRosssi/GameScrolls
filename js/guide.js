@@ -38,7 +38,7 @@ function crearCardGuia(portada,title){
 const fragmento = document.createDocumentFragment();
 
 function agregarGuia(){
-    for (let i = 0; i < guides.length; i++) {
+    for (let i = 0; i < 12; i++) {
         let div = document.createElement("div");
         div.classList.add("guide-card-popular","escala");
         div.dataset.consola = guides[i].dataConsola;
@@ -53,3 +53,45 @@ function agregarGuia(){
 }
 
 agregarGuia();
+
+//Agregar funcionalidad al botón de "Ver más"
+
+let btnExpandir = document.getElementById("expandir");
+
+let currentIndex = 12;   // comienza desde la guía Nº13
+const batchSize = 4; // número de guías a agregar por clic
+
+function agregarGuiaDesdeIndex(inicio, cantidad) {
+    const fragmento = document.createDocumentFragment();
+
+    const fin = Math.min(inicio + cantidad, guides.length);
+
+    for (let i = inicio; i < fin; i++) {
+        let div = document.createElement("div");
+        div.classList.add("guide-card-popular","escala");
+        div.dataset.consola = guides[i].dataConsola;
+        div.dataset.fecha = guides[i].dataFecha || "";
+        div.tabIndex = i + 1;
+
+        let guia = crearCardGuia(guides[i].img, guides[i].titulo, guides[i].link);
+        div.innerHTML = guia;
+
+        fragmento.appendChild(div);
+    }
+
+    guideContainer.appendChild(fragmento);
+}
+
+btnExpandir.addEventListener("click", () => {
+
+    agregarGuiaDesdeIndex(currentIndex, batchSize);
+
+    currentIndex += batchSize;  
+
+    // Si ya no quedan más guías, desactivar u ocultar el botón
+    if (currentIndex >= guides.length) {
+        btnExpandir.disabled = true; 
+        btnExpandir.textContent = "No hay más guías";
+    }
+});
+
