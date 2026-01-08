@@ -3,6 +3,8 @@
     --primary-register-font-color: #041a98;
     --header-height: 80px;
     --navbar-link-color: aliceblue;
+    --navbar-background-color: #3e1b04;
+    --guide-font: 'Poppins', sans-serif;
 }
 
 * {
@@ -54,7 +56,7 @@
 /*Nav*/
 
 header {
-    background-color: #3e1b04;
+    background-color: var(--navbar-background-color);
     color: var(--primary-text-color);
     display: flex;
     justify-content: space-between;
@@ -383,7 +385,7 @@ main {
     margin: 0px 150px;
 }
 
-.guide div {
+.guide-text-container {
     padding: 20px;
 }
 
@@ -397,6 +399,48 @@ main {
 
 .tab.active {
     display: block;
+}
+
+.guide-text {
+    margin-top: 15px;
+    text-align: justify;
+    text-indent: 3em;
+    line-height: 1.3em;
+}
+
+/* checklist */
+.checklist-container {
+    margin-top: 50px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.checklist-title {
+    font-size: 1.5rem;
+    color: var(--navbar-link-color);
+    background-color: var(--navbar-background-color);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.checklist-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0px;
+    justify-content: center;
+}
+
+.checklist-images {
+    width: 100px;
+    height: auto;
+}
+
+.text-image {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100px;
 }
 
 /* .guide-sidebar {
