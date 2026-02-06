@@ -44,13 +44,13 @@ const guides = [
     new guide("ps2", "26109", "../assets/portadas/kh2fmps2.jpg", "Kingdom Hearts 2: Final Mix"),
     new guide("ps2", "26110", "../assets/portadas/kh-com-ps2.jpg", "Kingdom Hearts Chain of Memories"),
     new guide("ps2", "26111", "../assets/portadas/persona3.jpg", "Persona 3"),
-    new guide("ps2", "26112", "../assets/portadas/hl2.jpg", "Half Life 2"),
+    new guide("pc", "26112", "../assets/portadas/hl2.jpg", "Half Life 2"),
 ];
 
 
-function crearCardGuia(portada,title){
+function crearCardGuia(portada,title,link){
     return `
-        <a href="#" target="_blank" rel="noopener noreferrer" class="href-normalizado">
+        <a href="${link}" target="_blank" rel="noopener noreferrer" class="href-normalizado">
             <img src="${portada}" alt="${title}" class="guide-portada">
              <p>${title}</p>
         </a> 
@@ -67,7 +67,7 @@ function agregarGuia(){
         div.dataset.fecha = guides[i].dataFecha || "";
         div.tabIndex = i + 1;
 
-        let guia = crearCardGuia(guides[i].img,guides[i].titulo);
+        let guia = crearCardGuia(guides[i].img,guides[i].titulo,guides[i].link);
         div.innerHTML = guia;
         fragmento.appendChild(div);
     };

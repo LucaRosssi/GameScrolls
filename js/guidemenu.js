@@ -20,7 +20,7 @@ majorButtons.forEach(button => {
      const target = button.dataset.submenu;
      const subMenu1 = document.getElementById("div1");
      const subMenu2 = document.getElementById("div6");
-     const subMenu3 = document.getElementById("div9");
+     const subMenu3 = document.getElementById("div8");
      
     tabs.forEach(tab => tab.classList.remove("active"));
 

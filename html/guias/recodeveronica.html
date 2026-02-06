@@ -31,9 +31,10 @@
     <link rel="canonical" href="https://tusitio.com/pagina" />
 
     <!-- Hojas de estilo y scripts necesarios -->
-    <link rel="stylesheet" href="../../css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
     <header>
@@ -42,12 +43,25 @@
             </a>
             <nav class="navbar">
                 <a href=".../../../../index.html" class="escala href-normalizado">Inicio</a>
-                <a href="guias.html" class="escala href-normalizado">Guías</a>
+                <a href="../../html/guias.html" class="escala href-normalizado">Guías</a>
                 <a href="foro.html" class="escala href-normalizado">Discusión</a>
                 <!--<a href="html/usuario.html" class="escala" title="Perfil de usuario"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>>-->
             </nav>
     </header>
     <main>
+        <div class="registro">
+            <dialog class="container" data-modal>
+                <form class="login">
+                    <h2 class="login-h2">Iniciar Sesion</h2>
+                    <input type="text" placeholder="Usuario" class="input-field">
+                    <input type="password" placeholder="Contraseña" class="input-field">
+                    <button class="submit-btn pointer escala">Iniciar Sesion</button>
+                </form>
+                <div class="change-menu">
+                    <p class="span">¿No tienes una cuenta? Registrate <a href="" class="href-normalizado link-hover">aca</a></p>
+                </div>
+            </dialog>
+        </div>
         <div class="guide-title">
             <h1>Resident Evil: Code Veronica (PS2)</h1>
             <img src="../../assets/portadas/recodeveronicax.jpg" alt="RE: Code Veronica" class="guide-portada">
@@ -69,12 +83,12 @@
                 </div>
                 <div class="guide-menu tab-flex" id="submenu2">
                     <button class="onclick" data-target="div6">Base Militar</button>
-                    <button class="onclick" data-target="div7">Huida de la Isla</button>
-                    <button class="onclick" data-target="div8">Antartica</button>
+                    <button class="onclick" data-target="div7">Antartica</button>
                 </div>
                 <div class="guide-menu tab-flex" id="submenu3">
-                    <button class="onclick" data-target="div9">Antártica 2 (Claire)</button>
-                    <button class="onclick" data-target="div10">Antártica 2 (Chris)</button>
+                    <button class="onclick" data-target="div8">Claire</button>
+                    <button class="onclick" data-target="div9">Chris</button>
+                    <button class="onclick" data-target="div10">Extra</button>
                 </div>
             </div>
             <section class="guide tabs">      
@@ -86,12 +100,12 @@
                         la puerta que te lleva a un pasillo. Acá hay una munición, una cinta de tinta y una máquina de escribir donde podés guardar. Seguí el pasillo y subí las escaleras para llegar al Cementerio. En esta parte ya empiezan 
                         a aparecer Zombies, así que te recomiendo equiparte el cuchillo, aunque lo mejor es tratar de ignorarlos. Al llegar al final, vas a llegar a una puerta que te lleva a un patio. Ni bien aparezcas, vas a ver una 
                         pistola a tu izquierda al lado de un cadáver. Al agarrarla, va a dar paso a una escena en donde aparece Steve. Una vez termine, andá a la puerta que está enfrente de la que usaste para entrar. Esta puerta te lleva a 
-                        un patio con una casa en el medio. Subí por las escaleras que llevan a la casa, y andá hasta el final del piso de madera para agarrar otra Hierva Verde. Después entrá a la casa, en donde va a haber 3 Zombies. 
-                        Te recomiendo matarlos para poder agarrar todos los objetos de esta zona. A la izquierda de la puerta va a haber unas escaleras, que te llevan a un lugar en donde hay una Hierva Verde, que podes combinar con las 
+                        un patio con una casa en el medio. Subí por las escaleras que llevan a la casa, y andá hasta el final del piso de madera para agarrar otra Hierba Verde. Después entrá a la casa, en donde va a haber 3 Zombies. 
+                        Te recomiendo matarlos para poder agarrar todos los objetos de esta zona. A la izquierda de la puerta va a haber unas escaleras, que te llevan a un lugar en donde hay una Hierba Verde, que podes combinar con las 
                         otras 2 que ya agarraste para hacer una cura.  Al bajar las escaleras, andá a la izquierda y agarrá la munición que está en la estantería. A la izquierda de acá vas a encontrar la cocina, en donde está el Mapa de la 
-                        Prisión, a la derecha no hay nada. Ahora, entrá a la puerta que está a la derecha de la entrada, la cual lleva a un dormitorio. Sobre la segunda cama superior izquierda, vas a conseguir el Diario del Prisionero. 
+                        Prisión, a la derecha no hay nada. Ahora, entrá a la puerta que está a la derecha de la entrada, la cual da a un dormitorio. Sobre la segunda cama superior izquierda, vas a conseguir el Diario del Prisionero. 
                         Continuá hasta el final del pasillo, y agarrá la munición que está sobre el estante. Esto va a activar una cinemática, y al terminar te van a atacar 2 zombies. Matalos, y agarrá el arma que dejó el Zombie al lado de la ventana al 
-                        entrar. 
+                        entrar, y después andá al fondo del pasillo, vas a ver que hay unos baños. En el último, vas a encotrar una Munición de Pistola. 
                     </p>
                     <br>
                     <p class="guide-text">
@@ -100,13 +114,13 @@
                         Spray y el archivo Manual de Instrucciones. Frente a ella, hay unos estantes en los que hay 2 cartuchos de granada, pero no los vas a poder sacar por culpa del detector así que ignoralos. Andá por la puerta que está a la 
                         izquierda para llegar a la sala de control. Ni bien entras, agarrá el archivo que está sobre las computadoras. Continuá avanzando para activar una cinemática con Steve. Al terminar, inspeccioná el 
                         escritorio para agarrar el Medallón del Halcón. En la mesa de al lado del escritorio vas a ver una tinta, pero tampoco la podés sacar del laboratorio, así que si no vas a guardar, dejala ahí. Al lado del escritorio vas a 
-                        ver una puerta, y a su derecha una palanca. Bajála para activar la electricidad. Ahora volvé a la sala anterior, y dejá el Medallón en la impresora 3D que está al lado de la mesa, ya que como es de metal no podes 
-                        sacarlo. Salí del laboratorio, y vas a ver que el botón de al lado de la persiana ahora está activo. Apretalo para levantarla, lo que va a hacer que salgan varios Zombies, y tras matarlos o ignorarlos, agarrá el 
-                        Matafuego del fondo de la habitación. Después entrá por la puerta que abrieron los Zombies, e inspeccioná la Guillotina para agarra la Llave Candado. Ahora, tenemos que volver al cementerio, tengan cuidado al pasar 
+                        ver una puerta, y a su derecha una palanca. Bajála para activar la electricidad. Ahora volvé a la sala anterior, dejá el Medallón en la impresora 3D que está al lado de la mesa, ya que como es de metal no podes 
+                        sacarlo, y agarrá el archivo Manual de Instrucciones que está al lado de la impresora. Salí del laboratorio, y vas a ver que el botón de al lado de la persiana ahora está activo. Apretalo para levantarla, lo que va a hacer que salgan varios Zombies, y tras matarlos o ignorarlos, agarrá el 
+                        Matafuego del fondo de la habitación. Después entrá por la puerta que abrieron los Zombies, e inspeccioná la Guillotina para agarra la Llave Candado. Ahora, tenemos que volver al cementerio, tené cuidado al pasar 
                         por el pasillo que rodea la Casa, porque al pasar te van a atacar dos perros. Cuando lleguen al cementerio, hay que usar el matafuego en el incendio para poder agarrar el malentin, y abrilo para conseguir el 
                         material TG-01, y el archivo Descripción del Producto “TG-01”. Ahora volvé al laboratorio, usando la Llave Candado en la puerta que está a la izquierda de la entrada de la zona con la casa para saltarte a los perros, y 
                         usá el material en la impresora 3D para crear una réplica del Emblema del Halcón que pasa por el detector de metales. Ahora salí del laboratorio, teniendo cuidado en el pasillo que ahora hay Zombies, y andá a la sala en donde 
-                        agarraste la Pistola, y usá el Emblema en la puerta para llegar a un puente. Seguí hasta el final, agarrá las dos Hiervas Verdes, y después volvé por la parte de madera hasta el Jeep para agarrar una munición. Un incendio te va 
+                        agarraste la Pistola, y usá el Emblema en la puerta para llegar a un puente. Seguí hasta el final, agarrá las dos Hierbas Verdes, y después volvé por la parte de madera hasta el Jeep para agarrar una munición. Un incendio te va 
                         a bloquear el camino, para avanzar tenés que empujar la caja que está sobre los tablones de madera. Para empujarla, tenés que ponerte atrás y avanzar. Subí por la escalera hasta el final, y vas a llegar a un patio. 
                         Seguí recto ignorando la puerta de la derecha, y vas a llegar al patio de la Mansión Ashford. 
                     </p>
@@ -169,8 +183,8 @@
                         maletín que todavía no podés abrir. Volvé a la habitación anterior, y ni bien aparecés, andá a la izquierda para abrir la segunda puerta. Ésta da a un pasillo con varios Zombies que también te conviene matar. Ni bien entres, vas a 
                         ver una munición de pistola, y al avanzar del lado derecho vas a poder agarrar una Hierba Roja, la cual se combina con la verde para aumentar la curación. A partir de este momento, te recomiendo que siempre combines una 
                         Hierba Roja con una Hierba Verde en vez de combinar tres Hierbas Verdes, puesto que ambas mezclas curan la vida al máximo. Seguí derecho y abrí la puerta que está al fondo. Ahora, estás en una especie de museo. Agarrá la Munición de Pistola 
-                        de la mesa y después inspeccioná la Hormiga que está en la pared para ver una cinemática. Una vez la termines, se va a abrir una entrada a una habitación secreta, en el que ni bien entrás tenés que agarrar el Timón que está en el 
-                        piso. Al fondo del pasaje también hay 2 pistolas, pero si las agarrás la puerta se va a cerrar dejándote encerrado, así que por ahora ignoralas. Ahora, volvé a la puerta principal e intentá salir para activar una cinemática en la 
+                        de la mesa y después inspeccioná la Hormiga que está en la pared para ver una cinemática. Una vez termine, se va a abrir una entrada a una habitación secreta, en el que ni bien entrás tenés que agarrar el Timón que está en el 
+                        piso. Al fondo del pasaje también hay 2 pistolas, pero si las agarrás la puerta se va a cerrar dejándote encerrado, así que ignoralas. Ahora, volvé a la puerta principal e intentá salir para activar una cinemática en la 
                         que Steve te pide ayuda. Para salvarlo, tenés que volver al museo e inspeccionar la computadora, que te va a pedir resolver un puzzle para abrir la puerta. Seleccioná los interruptores C y E, para acticvar una cinemática en la 
                         que Steve escapa y se lleva las pistolas que necesitamos para abrir la puerta de arriba. Cuando recuperes el control, volvé al Hall para ver una cinemática con Alfred; cuando termine, dejá en la Save Room el maletín y dejate el inventario 
                         Default (Cura, arma y munición), salí por la entrada principal, y andá a la derecha de las escaleras. Ni bien bajes, doblá a la derecha para descubrir un cuartito en el que hay Munición de Pistola y el Mapa del Palacio. 
@@ -184,13 +198,13 @@
                         puerta de la derecha, aunque antes de usarla, agarrá la Cinta de Tinta que está sobre una caja a tu izquierda. Ahora sí, entrá por la puerta y cruzá el puente. Cuando llegués a la siguiente habitación, usá el ascensor que está a la 
                         derecha hasta llegar a una cabina. En ella, vas a ver una palanca, que tenemos que usar para sacar el container que nos impide el paso. Para esto, usá la flecha de arriba hasta que esté alineada con el container, y después, usá la 
                         flecha izquierda hasta que veas que la sombra de la garra está alineada perfectamente con el container. Entonces, apretá X para levantarlo. Ahora, bajá por el ascensor, y andá hasta el fondo de la habitación, ya que ahora vas a poder 
-                        acceder al panel de control. Activá la palanca para subir la plataforma, aunque ésta está llena de enemigos. Una vez los mates a todos, subite a la plataforma, y agarrá las Flechas y la Tarjeta de Peligro Biológico. Ya tenemos lo que 
-                        necesitamos, así que ahora volvé al patio de la Mansión, volvé por la puerta que está pasando las escaleras. Deberías estar en el patio por el que llegamos desde el puente que da al cementerio. Avanzá por el camino, y ni bien se abra, 
+                        acceder al panel de control. Activá  palanca para subir la plataforma, aunque ésta está llena de enemigos. Una vez los mates a todos, subite a la plataforma, y agarrá las Flechas y la Tarjeta de Peligro Biológico. Ya tenemos lo que 
+                        necesitamos, así que ahora volvé al patio de la Mansión y andá por la puerta que está en el otro extremo. Deberías estar en el patio por el que llegamos desde el puente que da al cementerio. Avanzá por el camino, y ni bien se abra, 
                         doblá a la izquierda y entrá por la puerta para llegar a la Base Militar.  
                     </p>
                     <div class="checklist-container">
                         <h3 class="checklist-title">Checklist</h3>
-                        <div class="checklist-image-container">
+                        <div class="checklist-image-container">la
                             <div>
                                 <img src="/html/guias/assets/re-code-veronica/nota-secretario.webp" alt="nota-secretario" class="checklist-images">
                                 <p class="text-image">Nota del Secretario</p>
@@ -375,152 +389,307 @@
                 </div>
                 <div id="div5" class="tab">
                     <h2>Antartica (Claire)</h2>
-                    <p class="guide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae maiores quas sunt perferendis corrupti dolores dolorum veritatis eius! Ipsam molestias fugiat non repellat facilis consequatur obcaecati nam consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim iste veritatis numquam quisquam, veniam eaque, laudantium minima assumenda debitis, iure tenetur aut! Officia beatae modi ipsum rerum, nam ullam. </p>
+                    <p class="guide-text"> 
+                        Cuando recuperes el control, andá a la derecha hasta que veas una puerta al lado de una escalera que baja. Entrá en la puerta para agarrar un Polvo Ballesta, un Spray, Munición de Pistola x3, el Mapa de 
+                        la Base y el Diario de un Trabajador.  Una vez agarres todo, salí de la habitación y bajá por la escalera que está a la derecha, y caminá recto hasta encontrarte con una puerta de madera que lleva a la Save Room. 
+                        Acá vas a encontrar una Cinta de Tinta, el Memorándum de Alexander, Flechas y una Hierba Verde. Al fondo de la sala, vas a ver una biblioteca con un hueco detrás. Empujála en esa dirección para revelar un pasillo secreto, 
+                        en donde va a haber un locker con la Carta del Mayordomo y un botón que no hace nada porque no hay electricidad. Dejá todo en la caja a excepción de tu Inventario Default, y volvé al pasillo. Vas a ver que hay un 
+                        camino a tu derecha, andá por ahí y entrá por la puerta. Ahora vas a estar en una habitación grande con varias salidas, pero la mayoría están bloqueadas. Avanzá hasta que veas una puerta azul que dice “Weapons” y entrá. 
+                        Acá, vas a encontrar la Llave Sala de Minas arriba de una cinta, y al fondo de la habitación vas a ver unos lockers. Inspeccionalos para conseguir un AK-47, y seguí avanzando hasta que veas un cadáver junto a un detonador, 
+                        el cuál hay que colocar en el locker que está a tu izquierda. Esto va a servir para el gameplay de Chris. Ahora, volvé a la habitación anterior, y usá la Llave Sala de Minas en la puerta que está sobre una escalera. Ni 
+                        bien entrés a la próxima habitación, andá a la derecha y subí por los escalones gigantes, para llegar a una zona con una válvula. Es importante que la inspecciones, ya que al hacerlo vas a ver que tiene una ranura 
+                        octogonal, lo que vas a necesitar saber cuando modifiques la Manija Válvula. Si no inspeccionas esto ahora, vas a tener que volver más adelante y vas a perder tiempo. Una vez que termines, bajá por los escalones y entrá 
+                        por la puerta que está al fondo a la izquierda para entrar a la sala del generador. Esta zona está llena de perros, así que tené cuidado. Empezando desde la entrada de la habitación, avanzá derecho hasta el fondo; acá vas 
+                        a poder agarrar 2 Municiones de Pistola y 2 Hierbas Verdes. Ahora, doblá a la izquierda y seguí hasta el fondo, en donde vas a ver un generador. Activalo para encender la máquina, y ahora andá para la derecha por el pasillo. A 
+                        la derecha vas a conseguir 2 hierbas verdes, y una vez las agarres, andá para la izquierda hasta ver una pequeña entrada con una Hierba Verde, después avanza para ver otra palanca que tenés que activar para 
+                        restablecer la energía. Ahora, volvé a la Save Room, y agarrá algún arma explosiva, ya sea el Lanzagranadas o la ballesta con munición explosiva. Tené cuidado al volver, porque en el pasillo de afuera ahora va a haber 
+                        unas polillas que te envenenan y que respawnean infinitamente. El veneno te lo podés sacar combinando una hierba verde con una azul. Ahora, volvé a la habitación en la que está la cinta, y entrá por la única puerta que 
+                        todavía no entraste. En esta habitación van a haber unas arañas bastante molestas porque aguantan muchísimos golpes de la munición normal y pueden envenenarte, por eso te recomiendo que las mates con munición explosiva. 
+                        Una vez las mates, del lado derecho vas a poder agarrar Flechas, 2 Municiones de Pistola, una Hierba Verde y una Hierba Azul, y al fondo de la habitación está la Etiqueta Código arriba de unas cajas. Ahora que tenemos este 
+                        objeto, volvé a la habitación anterior y andá al centro, en donde hay una cinta transportadora. Apretá el interruptor que está en la pared para traer una caja, y una vez llegue, ponele la Etiqueta Código y activá la 
+                        palanca del panel de control. Esto va a hacer que la habitación en donde estaban las arañas se llene de gas venenoso, lo que va a hacer que al entrar puedas agarrar la Máscara de Gas que está al lado de la puerta. Ahora 
+                        que tenés la máscara, volvé a la Save Room. Como ya hay electricidad, ahora podés activar el botón que estaba en el locker, lo que va a revelar una habitación secreta en la que va a saltar una cinemática. Al terminar, agarrá 
+                        la maceta que está en la esquina superior izquierda, e inspeccionala para conseguir la Llave S. Máquinas. Ahora, dejá todo en la caja, menos el Inventario Default, la Máscara y la Llave.
+                    </p>
+                    <br>
+                    <br>
+                    <p class="guide-text">  
+                        Salí de la habitación y volvé a subir por la escalera que está al final del pasillo. Avanzá hacia la derecha y entrá por la puerta doble que está previa a la escalera de mano. Una vez dentro, andá a tu izquierda y entrá por la puerta. 
+                        Inspeccioná la máquina con palancas que hay al frente tuyo para activar una cinemática con Steve en la que va a romper un caño, haciendo que todo el lugar se infecte de gas venenoso. Una vez termine la cinemática, volvé a entrar 
+                        (necesitas la máscara), y andá a la puerta que está al fondo y a la derecha para llegar a una habitación con una válvula que sirve para detener el gas. Sin embargo, es de base cuadrada, por lo que no entra en el hueco que vimos 
+                        previamente. Para que funcione, tenemos que volver a la habitación con la puerta doble, e ir hacia el lado opuesto. Al entrar por la puerta, vas a llegar a una sala con un Zombie encerrado. Acá vas a encontrar una Cinta de Tinta, 2 
+                        Municiones de Pistola, una Hierba Azul y una Hierba Verde. También vas a ver una máquina que corta metal. Usála en la Manija Válvula para modificar su base a una octogonal. Con esto, ya estamos listos para terminar con 
+                        la historia de Claire. Volvé a la Save Room, y dejá TODAS tus armas. Quedáte únicamente con una o dos curas, la pistola, el cuchillo, la máscara y la Manija Válvula, puesto que después de la pelea que se viene, va a comenzar la 
+                        historia de Chris, y todos los objetos que queden en el inventario de Claire se van a perder hasta casi el final del juego, mientas que los que dejemos en la Caja van a estar disponibles para Chris. Después de prepararte, andá a la 
+                        habitación donde estaba la válvula y usá la Manija Válvula para frenar el gas (Tené cuidado porque ahora van a aparecer muchos enemigos). Al frenar el gas, va a saltar una cinemática en la que te ataca Alfred, y Steve vuelve a salvarte, 
+                        haciendo que el jefe de la familia Ashford caiga por un precipicio. Una vez termine la cinemática, bajá a la parte inferior de la sala antes de subirte a la excavadora para agarrar el Rifle Francotirador de Alfred. Ahora sí, interactuá 
+                        con la Excavadora para huir de la base. Cuand termine la cinemática vas a aparecer en una pista de helicóptero. Andá a la esquina inferior derecha para conseguir un Spray, y después bajá por la escalera. Una vez bajes, vas a ser atacado por Nosferatu, un 
+                        experimento que se hizo sobre el padre de Alfred que despertó después de que este cayera. La pelea se puede complicar debido a que la arena es chica, y Nosferatu tiene mucho alcance. Vos preocupate por dejar siempre una vía de escape, y 
+                        tené cuidado con su ataque venenoso. Lo más importante de esta pelea es que cuenta con cinemáticas diferentes en función de con qué arma lo mates. Si lo matas con un arma común, va a saltar la cinemática base. Si le das el último golpe con el 
+                        cuchillo, va a saltar una animación especial en la que Claire lo ataca con el cuchillo, y si lo matas con el francotirador, va a saltar otra cinemática especial, y aparte se va a desbloquear la cámara en primera persona en el Modo 
+                        Batalla. Una vez lo mates, va a saltar una cinemática en la que Alfred revive a Alexia con su último aliento, y ésta ataca la excavadora antes de que Steve y Claire puedan escapar, dando final así a la primera parte del juego. 
+                    </p>
                     <div class="checklist-container">
                         <h3 class="checklist-title">Checklist</h3>
                         <div class="checklist-image-container">
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/mapa-base-militar.webp" alt="mapa-base-militar" class="checklist-images">
-                                <p class="text-image">Mapa de la Base Militar</p>
+                                <img src="/html/guias/assets/re-code-veronica/diario-prisionero.webp" alt="diario-trabajador" class="checklist-images">
+                                <p class="text-image">Diario de un Trabajador</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/lanzagranadas.webp" alt="lanzagranadas" class="checklist-images">
-                                <p class="text-image">Lanzagranadas</p>
+                                <img src="/html/guias/assets/re-code-veronica/mapa-base-antartica.webp" alt="mapa-base-antartica" class="checklist-images">
+                                <p class="text-image">Mapa de la Base Antártica</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/ballesta.webp" alt="ballesta" class="checklist-images">
-                                <p class="text-image">Ballesta</p>
+                                <img src="/html/guias/assets/re-code-veronica/diario-prisionero.webp" alt="memorandum-alexander" class="checklist-images">
+                                <p class="text-image">Memorándum de Alexander</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/memorandum-contraseña.webp" alt="memorandum-contraseña" class="checklist-images">
-                                <p class="text-image">Memorándum Sobre el Número de Contraseña</p>
+                                <img src="/html/guias/assets/re-code-veronica/carta-mayordomo.webp" alt="carta-mayordomo" class="checklist-images">
+                                <p class="text-image">Carta del Mayordomo</p>
+                            </div>
+                            <div>
+                                <img src="/html/guias/assets/re-code-veronica/ak47.webp" alt="ak47" class="checklist-images">
+                                <p class="text-image">AK-47</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="div6" class="tab">
                     <h2>Base Militar</h2>
-                    <p class="guide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae maiores quas sunt perferendis corrupti dolores dolorum veritatis eius! Ipsam molestias fugiat non repellat facilis consequatur obcaecati nam consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim iste veritatis numquam quisquam, veniam eaque, laudantium minima assumenda debitis, iure tenetur aut! Officia beatae modi ipsum rerum, nam ullam. </p>
+                    <p class="guide-text">
+                        Ahora es momento de controlar a Chris. Cuando tengas el control, agarrá la Hierba Verde que está enfrente tuyo, y después avanzá para ver una cinemática con Rodrigo, que va a ser tragado por la 
+                        serpiente que estaba afuera de la Base Militar. Al terminar la cinemática, avanzá para ver una Save Room. Agarrá la Cinta de Tinta y las Flechas que están sobre el escritorio, y equipate el Lanzagranadas con Ganzúa 
+                        Verdes, ya que son las mejores para matar a la serpiente. Una vez termines de equiparte, salí por la puerta para la Boss Fight; en esta habitacion vas a poder agarrar una Hierba Verde, una Hierba Azul, una 
+                        Munición de Pistola y unas Flechas. Cabe aclarar que esta pelea es opcional, si querés podés salir corriendo ya que no vas a volver a pasar por acá, aunque te recomiendo que la mates, ya que al hacerlo va a 
+                        escupir a Rodrigo, quien te va a dar el encendedor de Claire, el cual podés usar en la estatua que sostiene un cáliz en la Save Room para conseguir las Metralletas. Ahora, volvé a la habitación anterior y 
+                        salí por el ascensor del fondo para llegar a la habitación en la que viste el pasado de Steve. Salí por la puerta doble, y andá a la parte trasera del tanque para ver un botón. Apretalo así el tanque se mueve y revela 
+                        una bajada con una Munición de Pistola al lado. Una vez que estes abajo, avanzá recto para agarrar una Hierba Verde, una Hierba Azul y unos Cartuchos de Escopeta, y entrá por la puerta amarilla para llegar a una Save Room. Acá 
+                        vas a poder agarrar una Hierba Verde, unos Cartuchos de Escopeta, una Munición de Pistola, una Cinta de Tinta y unas Granadas Ácidas. Al lado de la Máquina de Escribir, vas a ver que hay un escritorio con 4 cajones de 
+                        diferentes colores. Podés mirar en la pintura del volcán para saber en qué orden abrir los cajones para desbloquearlos, el orden es Rojo, Verde, Azul y Marrón. Al abrirlos en ese orden, se va a abrir el último cajón y vas 
+                        a recibir la Lunger, la cual desbloquea a Steve como personaje jugable en el Modo Batalla. Ahora sí, dejá todo en la caja menos el Inventario Default y salí de la habitación. Andá a tu izquierda para conseguir la Batería, 
+                        aunque con cuidado porque al agarrarla te van a atacar unas arañas. No te recomiendo matarlas ya que son muy fáciles de esquivar. Volvé a la habitación con el ascensor, y usá la batería en la plataforma que está al lado 
+                        derecho para acceder a la parte superior. Una vez acá, andá a la izquierda para agarra la Llave Alm. Máq. y el Informe, y después entrá por la puerta que está a la derecha. Una vez termine la cinemática (en la que aparece 
+                        Wesker liberando a los Hunters del primer juego), salí por la puerta de la izquierda, y una vez fuera entrá por la puerta que está enfrente para llegar a una habitación llena de Zombies, en la que vas a conseguir la Mochila Lateral y unas 
+                        Flechas. Ahora, volvé al patio, entrá por la puerta por la que saliste antes, y bajá por el ascensor que está a tu izquierda hasta el PB1. Vas a ver que ahora hay una escalera donde está el puente con la cabeza del león; 
+                        bajá para llegar a un patio en donde vas a conseguir unas Llamas, Cinta de Tinta, Munición de Pistola y la Escopeta, tené en cuenta que al agarrarla la escalera va a volver a su posición original. Entrá por la puerta para 
+                        llegar al laboratorio, agarrá la Hierba Verde que está al lado de la escalera y subí. Seguí avanzando normalmente hasta llegar a una habitación con una plataforma elevadora a tu derecha. Andá a tu izquierda para agarrar 
+                        unas Flechas, y después agarrá el Tirador Puerta que está en el elevador, lo que va a hacer que te ataque dos Hunters, que son débiles a las Granadas Amarillas, aunque con la escopeta no deberías tener problemas para matarlos. 
+                        Una vez los mates, entrá por la puerta que está del lado izquierdo, agarrá la Munición de Pistola, Cartuchos de Escopeta, una Hierba Roja y una Hierba Azul (Ver si hay un archivo sobre la mesa). Al lado de la mesa vas a ver 
+                        una especie de heladera. Usá la Llave Alm. Máq. para abrirla, lo que va a permitirte regular de la temperatura. Ponela en 12.8ºC para que el líquido amarillo cambie de color y puedas agarrarlo, lo que va a hacer que te ataque 
+                        otro Hunter. Volvé a la habitación donde agarraste la Mochila Lateral, y entrá por la puerta que está al fondo. Ahora vas a llegar a un pasillo con una puerta del lado izquierdo que no tiene pomo. Usá el Tirador Puerta para 
+                        abrirla, y andá a la derecha para agarrar la Munición de Pistola, y a la izquierda para agarrar el Objeto Tanque. Ahora volvé a la habitación con el ascensor, y andá al P1. Entrá por la puerta que está a tu derecha, y colocá el 
+                        Objeto en le maqueta de la Base Militar. Esto va a hacer que el cuadro del medio se corra y muestre un compartimiento secreto, en el que vas a conseguir la Llave Plat. Girat. y la Nota del Pasaje Secreto, aparte de mostrar un 
+                        panel que tiene 3 huecos que activan unos rayos que bloquean una palanca. Para poder acceder a la palanca, vamos a tener que recuperar la Pruebas que recolectamos con Claire para entrar al avión. 
+                    </p>
+                    <br>
+                    <br>
+                    <p class="guide-text">
+                        Para conseguirlas, tenemos que volver a la habitación con la plataforma elevadora y usar la Llave Plat. Girat. para legar al siguiente piso. Una vez subas, empujá una de las cajas para conseguir una Pólvora Ballesta. Al salir por la 
+                        pared hueca, vas a ver la puerta de la entrada de la base, y otra que está al lado de los escombros. Entrá por esta última para conseguir unos Cartuchos de Escopeta, y pasá por el hueco que está al fondo de la habitación para llegar al 
+                        patio en donde te atacó Alfred en el gameplay de Claire. Andá por la escalera que está pasando la reja del lado izquierdo, y baja la palanca que está en la pared para desactivar el gas venenoso. Ahora, bajá por el escalón, y entrá por 
+                        la puerta que está enfrente, y entrá otra vez por la puerta de enfrente para llegar a una sala en la que hay una mesa de trabajo, en la que podemos mejorar el arma base de Chris para que haga más daño. En la estantería de la 
+                        izquierda, vas a ver que hay un frasco verde; agarralo y combinalo con el que ya tenés para obtener la Mezcla Benigna.
+                        Ahora volvé a la entrada de la base, y salí por la puerta doble, agarrá los Cartuchos de Escopeta y las Flechas, y después usá el ascensor para llegar al aeropuerto. Salí por la única puerta, y subí por el ascensor hasta llegar a donde 
+                        estaba el puente (el que levantamos con Claire para que saliera el avión), el cual no funciona porque no tiene aceite. Para solucionar esto, tenés que cruzar por el puente y entrar por la puerta a la siguiente habitación. Al entrar, vas 
+                        a ver que a tu izquierda hay unos medidores. Básicamente, hay que usarlos medidores de arriba para llenar el de abajo, el cual debe tener 7 litros de aceite. Para conseguir esto, tenés que darle dos veces al 3, una vez al 5, una vez al 
+                        10, dos veces al 3, y una última vez al 5. Al hacer esto, el puente va a poder usarse, aunque también van a atacarte los Zombies que estaban en el piso; matalos y andá al fondo de la habitación para agarrar unos Cartuchos de Escopeta. Ahora, volvé a la 
+                        sala del puente y bajalo, así podés cruzarlo y llegar a la entrada del aeropuerto, en el que vas a conseguir unos Cartuchos de Escopeta. Andá por la puerta que da a la habitación en donde estaba el avión, y agarrá las 3 Pruebas del panel 
+                        de control, aunque antes de hacerlo vas a tener que desactivar la energía en la computadora que está al lado. Ahora, volvé a la habitación de los cuadros, y poné las Pruebas en los 3 huecos, lo que va a desactivar los rayos que bloquean 
+                        la palanca. Activala para mover la maqueta de la mansión y revelar una escalera secreta, que a su izquierda tiene una Hierba Verde y 2 Cartuchos de Escopeta. Al bajar por la escalera, vas a llegar a un pasillo infestado de arañas 
+                        venenosas. Te recomiendo matarlas a todas. Agarrá la Hierba verde y las Granadas que están al dar la vuelta, y bajá las escaleras; agarrá las 2 Hierbas Verdes y la Hierba Azul que están ni bien entrás, y avanzá para ver una cinemática 
+                        en la que vas a ver que está la Placa Águila que necesitamos para escapar de la base custodiada por un Albinoide evolucionado. En el piso de esta habitación vas a encontrar una Munición de Pistola, y al igual que la pelea contra la 
+                        serpiente, si querés podés agarrar la Placa y salir de la habitación sin matar al jefe. Para esto, vas a necesitar 2 sprays o alguna mezcla de hierbas que te cure toda la vida, ya que al pisar el agua, el Albinoide va a atacarte con rayos 
+                        eléctricos que sacan mucha vida. Si querés matarlo, vas a tener que esperar a que se acerque al borde y dispararle, es algo tedioso, pero es la forma más segura. Una vez consigas la Placa, combinala con la Mezcla Benigna para obtener la 
+                        Alabarda. Con esto ya podés abandonar la Base; para eso volvé al lugar en donde conseguiste la escopeta, y bajá al agua para poder llegar al otro lado y agarrar 2 Hierbas Rojas. Subí la escalera para llegar al pasillo que da a la Save 
+                        Room, y usá el Alabarda en la puerta del fondo para activar la cinemática en la que abandonas la Base Militar con destino a la Antártida. 
+                    </p>
                     <div class="checklist-container">
                         <h3 class="checklist-title">Checklist</h3>
                         <div class="checklist-image-container">
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/mapa-base-militar.webp" alt="mapa-base-militar" class="checklist-images">
-                                <p class="text-image">Mapa de la Base Militar</p>
+                                <img src="/html/guias/assets/re-code-veronica/metralletas.webp" alt="metralletas" class="checklist-images">
+                                <p class="text-image">Metralletas</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/lanzagranadas.webp" alt="lanzagranadas" class="checklist-images">
-                                <p class="text-image">Lanzagranadas</p>
+                                <img src="/html/guias/assets/re-code-veronica/lunger.webp" alt="lunger" class="checklist-images">
+                                <p class="text-image">Réplica Lunger</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/ballesta.webp" alt="ballesta" class="checklist-images">
-                                <p class="text-image">Ballesta</p>
+                                <img src="/html/guias/assets/re-code-veronica/informe-aleacion-anticorrosiva.webp" alt="informe-aleacion-anticorrosiva" class="checklist-images">
+                                <p class="text-image">Informe de Aleación Anticorrosiva Mejorada</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/memorandum-contraseña.webp" alt="memorandum-contraseña" class="checklist-images">
-                                <p class="text-image">Memorándum Sobre el Número de Contraseña</p>
+                                <img src="/html/guias/assets/re-code-veronica/mejora-invenario.webp" alt="mejora-inventario" class="checklist-images">
+                                <p class="text-image">Mochila Lateral</p>
+                            </div>
+                            <div>
+                                <img src="/html/guias/assets/re-code-veronica/escopeta.webp" alt="escopeta" class="checklist-images">
+                                <p class="text-image">Escopeta</p>
+                            </div>
+                            <div>
+                                <img src="/html/guias/assets/re-code-veronica/memorandum-alfred.webp" alt="nota-pasaje-secreo" class="checklist-images">
+                                <p class="text-image">Nota del Pasaje Secreto</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="div7" class="tab">
-                    <h2>Huida de la Isla</h2>
-                    <p class="guide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae maiores quas sunt perferendis corrupti dolores dolorum veritatis eius! Ipsam molestias fugiat non repellat facilis consequatur obcaecati nam consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim iste veritatis numquam quisquam, veniam eaque, laudantium minima assumenda debitis, iure tenetur aut! Officia beatae modi ipsum rerum, nam ullam. </p>
+                    <h2>Antartica</h2>
+                    <p class="guide-text">
+                        Al empezar, salí de la habitación por la puerta gris. Vas a aparecer en la habitación en la que se estrelló el avión, aunque con unos enemigos tentáculos . Mátalos y entrá por la puerta doble. Vas a ver que el piso está congelado 
+                        y podés caminar sobre el hielo. Desde la puerta, andá a la izquierda, y entrá por la puerta para llegar a la habitación en la que está la válvula. Agarrala (Cuidado porque se van a levantar los Zombies) y salí de la habitación, pero esta 
+                        vez andá al otro lado, y entrá por la primera puerta, que da a la habitación con el Zombie encerrado. Debido a los daños de la base la puerta está rota, así que ahora podés entrar a la jaula para agarrar un Maletín y unos Cartuchos de 
+                        Escopeta (El maletín lo vas a poder abrir cuando vuelvas a controlar a Claire). Salí de la habitación, y andá la Save Room, donde tenes que usar la Alabarda en el hueco que está al lado de un mueble. Al colocarla, se van a abrir las puertas 
+                        de abajo, y vas a poder agarrar el Pisapapeles, el Diario de Alfred y una Cinta de Tinta. Volvé a la habitación con el piso congelado, tomá el camino que está a tu derecha, y cuando llegues a la parte que está rota, apretá la X para 
+                        poder bajar, y llegar al otro lado de la baranda. Entrá por la puerta que está a tu derecha. Ni bien aparezcas, te va a atacar un Hunter; matalo, ignorá la puerta que tenés a tu izquierda, y entrá por la que está al fondo del pasillo. 
+                        Cuando salgas del Ascensor, cruzá la puerta que tenés enfrente, y entrá por la puerta que está a tu izquierda. Del lado derecho, vas a ver que hay una máquina con una ranura ; usá la válvula, y después andá para el otro lado del generador y activá la 
+                        palanca para restablecer la electricidad. Agarrá la Cinta de Tinta y las 2 municiones que están el escritorio, las 2 Hierbas Verdes y la Hierba Azul que están a la izquierda de la habitación, y los Cartuchos de Escopeta del lado derecho, 
+                        y dejá todo en la caja, salvo el Inventario Default y el Pisapapeles. Ahora, volvé al pasillo anterior, matá a loz Zombies, agarrá la Hierba Azul y las 2 Hierbas Verdes, y entrá por la puerta del fondo, que te va a 
+                        llevar a una habitación similar a una del Resident Evil 1. Agarrá los Cartuchos de Escopeta y la Munición de Pistola de la cómoda, y entrá por el pasillo que está al lado de la puerta. Cuando llegues al final, gira a la izquierda, donde vas a 
+                        ver la estatua del Tigre del primer juego. Primero, sácale el ojo Izquierdo para conseguir el Enchufe, y después el derecho para conseguir Balas de Magnum. Ahora, entrá por la puerta para llegar a una habitación con un nido de hormigas 
+                        en el medio. Agarrá las Alas de Libélula que están en la plataforma que sobresale, y después andá por el camino de la derecha. Agarrá las 2 Hierbas Verdes que están del lado derecho, y después entrá por la puerta. Andá a la derecha de 
+                        la escalera para agarrar el Informe de la Investigación del Virus, y subí la escalera. A tu derecha, vas a ver una máquina que te pide ingresar un código. El puzzle es algo rebuscado, pero el código final es la doble A, la corona, el 
+                        corazón y la pica. Al introducirlo, se va a abrir un compartimiento; poné el Pisapapeles, lo que va a hacer que se levante una cápsula de la que cae el cadáver de Alfred. Inspeccioná su cuerpo para conseguir su anillo, y 
+                        comprobalo para sacarle la joya.  Ahora volvé a la habitación anterior, y andá del otro lado, agarrá la Hierba Verde y entrá por la puerta. Acá vas a conseguir el Informe de la Investigación Sobre la Hormiga Reina, Munición de Pistola, 
+                        una Hierba Azul y una Hierba Verde. Una vez agarres todo, volvé a la Save Room, dejá todo en la caja salvo por el Inventario Default, el Matafuegos y la Válvula (combinala con el Enchufe). 
+                    </p>
+                    <br>
+                    <br>
+                    <p class="guide-text">
+                        Ahora, salí al pasillo y entrá por la puerta que está a tu derecha, después entrá por la de la puerta que tenés en frente, y avanzá por el pasillo hasta llegar a la puerta doble. Acá hay dos ascensores; subí por el que está al fondo, y 
+                        usá la válvula en la ranura para vaciar el tanque de agua. Después, bajá por la escalera para agarrar la Llave Grúa (Cuidado que al agarrarla te va a atacar un Hunter). Ahora, apretá el botón azul que está frente al vidrio para elevar un 
+                        barril, usalo para recargar el Matafuegos. Una vez lo hagas, bajá por el ascensor que está al lado del botón, y usá el Matafuegos en el incendio que vas a ver al avanzar. Una vez apagues el fuego, agarrá la Magnum que está en la cinta a 
+                        tu izquierda, y después andá hasta el fondo, vas a ver el detonador que pusiste con Claire. Usá el Encendedor para activarlo y abrir la puerta, así conseguís 3 Municiones de Pistola. Ahora, subí por el ascensor, volvé a la habitación 
+                        anterior y entrá por la puerta doble para llegar a la habitación con el piso congelado. Andá a la grúa que está a tu derecha, y usá la Llave Grúa para levantar el cadáver de Nosferatu que estaba sumergido en el hielo. Cuando lo hagas, va 
+                        a saltar una cinemática en la que aparece Alexia y libera a una araña que estaba dando vueltas antes. El objetivo es agarrar la joya que está en el cadáver de Nosferatu, una vez la tengas si querés podés irte sin matar a la araña, aunque 
+                        también podés matarla. Una vez consigas la joya, andá a la Save Room, y equípate bien porque se viene una pelea difícil. Te recomiendo llevar la Magnum porque es la que más daño hace, aparte de las dos joyas y alguna que otra cura. Una 
+                        vez termines, volvé al patio y entrá por la puerta doble. Subí las escaleras para agarrar un Cuchillo, después volvé a la planta baja, y andá atrás de la escalera. Ahí vas a encontrarte con Claire atrapada en una especie de telaraña. 
+                        Usá el cuchillo para liberarla, y así activar una cinemática en la que Alexia los ataca y se dividen. Al terminar la cinemática, vas a volver a controlar a Claire. 
+                    </p>
                     <div class="checklist-container">
                         <h3 class="checklist-title">Checklist</h3>
                         <div class="checklist-image-container">
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/mapa-base-militar.webp" alt="mapa-base-militar" class="checklist-images">
-                                <p class="text-image">Mapa de la Base Militar</p>
+                                <img src="/html/guias/assets/re-code-veronica/memorandum-alfred.webp" alt="diario-alfred" class="checklist-images">
+                                <p class="text-image">Diario de Alfred</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/lanzagranadas.webp" alt="lanzagranadas" class="checklist-images">
-                                <p class="text-image">Lanzagranadas</p>
+                                <img src="/html/guias/assets/re-code-veronica/informe-hunk.webp" alt="informe-investigacion-virus" class="checklist-images">
+                                <p class="text-image">Informe de la Investigación del Virus</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/ballesta.webp" alt="ballesta" class="checklist-images">
-                                <p class="text-image">Ballesta</p>
+                                <img src="/html/guias/assets/re-code-veronica/informe-hunk.webp" alt="informe-investigacion-hormiga-reina" class="checklist-images">
+                                <p class="text-image">Informe de la Investigación Sobre la Hormiga Reina</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/memorandum-contraseña.webp" alt="memorandum-contraseña" class="checklist-images">
-                                <p class="text-image">Memorándum Sobre el Número de Contraseña</p>
+                                <img src="/html/guias/assets/re-code-veronica/magnum.webp" alt="magnum" class="checklist-images">
+                                <p class="text-image">Magnum</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="div8" class="tab">
-                    <h2>Antartica 1</h2>
-                    <p class="guide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae maiores quas sunt perferendis corrupti dolores dolorum veritatis eius! Ipsam molestias fugiat non repellat facilis consequatur obcaecati nam consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim iste veritatis numquam quisquam, veniam eaque, laudantium minima assumenda debitis, iure tenetur aut! Officia beatae modi ipsum rerum, nam ullam. </p>
+                    <h2>Claire</h2>
+                    <p class="guide-text">
+                        Cuando recuperes el control vas a aparecer en una Save Room, en la que vas a poder agarrar Munición de Pistola, Cartuchos de Escopeta, una Hierba Verde y una Hierba Roja. Dejá todo en la caja y sacá el maletín que conseguiste con 
+                        Chris para conseguir munición de Magnum. Ahora, quedate en el inventario únicamente un arma, y 3 curas máximas, que las vas a necesitar. Una vez termines, salí por la puerta para llegar a un pasillo con unos tentáculos. Después de
+                         matarlos, entrá por la puerta del final, y después subí por la escalera que está a tu izquierda, donde está el cañón. Agarrá el archivo Memorándum de Seguridad que está en el piso, e inspeccioná el cañón, que va a 
+                         dejar caer una esfera de cristal con una carta adentro. Esto va a activar una plataforma que va a caer; tené cuidado porque si estás abajo cuando cae, te va a matar al instante. Colocá la esfera en el centro de la plataforma (vas a 
+                         ver que está más claro el suelo) para así conseguir la Tarjeta de Seguridad. Ahora, entrá por la primera puerta que está del lado derecho de la puerta por la que entraste, y usá la Tarjeta de Seguridad en la cerradura para poder 
+                         acceder a un pasillo en el que va a saltar una cinemática, donde vas a ver a Steve sufriendo una mutación. Al no reconocerte va a atacarte, y va a empezar una persecución. Es imposible matarlo, simplemente corré a la puerta, y usá 
+                         las curas cada vez que te golpee, ya que te va a pegar por lo menos 2 veces si o si. Una vez salgas, va a saltar una cinemática en la que Steve recupera la conciencia y te salva de Alexia. Al terminar, vas a volver con Chris
+                    </p>
                     <div class="checklist-container">
                         <h3 class="checklist-title">Checklist</h3>
                         <div class="checklist-image-container">
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/mapa-base-militar.webp" alt="mapa-base-militar" class="checklist-images">
-                                <p class="text-image">Mapa de la Base Militar</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/lanzagranadas.webp" alt="lanzagranadas" class="checklist-images">
-                                <p class="text-image">Lanzagranadas</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/ballesta.webp" alt="ballesta" class="checklist-images">
-                                <p class="text-image">Ballesta</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/memorandum-contraseña.webp" alt="memorandum-contraseña" class="checklist-images">
-                                <p class="text-image">Memorándum Sobre el Número de Contraseña</p>
+                                <img src="/html/guias/assets/re-code-veronica/memorandum-seguridad.webp" alt="memorandum-seguridad" class="checklist-images">
+                                <p class="text-image">Memorándum de Seguridad</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="div9" class="tab">
-                    <h2>Antartica 2 (Claire)</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae maiores quas sunt perferendis corrupti dolores dolorum veritatis eius! Ipsam molestias fugiat non repellat facilis consequatur obcaecati nam consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim iste veritatis numquam quisquam, veniam eaque, laudantium minima assumenda debitis, iure tenetur aut! Officia beatae modi ipsum rerum, nam ullam. </p>
+                    <h2>Chris</h2>
+                    <p class="guide-text">
+                        Al volver con Chris, vas a ver una cinemática donde aparecen Alexia y Wesker, quien termina huyendo y te deja peleando sólo con ella. Si tenés la Magnum la pelea es muy fácil, de 5 o 6 tiros la deberías matar. Una vez lo logres, agarrá la 
+                        Joya Roja que está en su cadáver, subí las escaleras y usá las 3 Joyas Familiares en la pintura para descubrir una puerta secreta. Al entrar por ella, vas a llegar a una habitación igual a la que había en la mansión Ashford. Andá por 
+                        el camino de la izquierda, y entrá por la puerta que está del lado izquierdo antes de que el pasillo vuelva a doblar. Adentro, vas a poder agarrar Cintas de Tinta y Cartuchos de Escopeta. Después, inspeccioná el escritorio con la silla 
+                        amarilla para agarrar la Llave Sala Ester. Salí y volvé a la puerta por la que entraste en el pasillo, y entrá por la puerta que está a la derecha. Agarrá el archivo Clave: Informe Verónica que está en una de las sillas y las dos Hierbas 
+                        Verdes que están contra la baranda, y después bajá por el ascensor. Agarrá la Munición de Pistola que está entre dos tubos de cristal, y apretá el botón que está a en la computadora para poder agarrar la última Ala de Libélula. Ahora, 
+                        volvé a la habitación en donde peleaste con Alexia, y usá la Llave Sala Ester. en la puerta doble que está del lado derecho, lo que te va a dejar en la habitación con una estatua en el medio. Entrá por la puerta que está a la derecha, y 
+                        volvé a la sala en donde está el generador para desactivar la energía. Aprovechá para dejar todo en la caja, salvo por el Inventario Default y las 4 Alas de Libélula. Salí de la habitación y entrá por la puerta de la derecha para volver 
+                        a entrar a la mansión desde el patio. Ahora, entrá de nuevo por la puerta doble, y andá adonde está la estatua del tigre, que al no haber electricidad está desactivada, lo que te permite sacar las dos joyas. Una vez las tengas, volvé a entrar 
+                        por la puerta que está subiendo la escalera, doblá a la izquierda y después a la derecha. Agarrá las dos Hierbas Verdes y entrá por la puerta. Vas a ver que es lo mismo que en la mansión, poné la joya Azul en la caja musical, después 
+                        andá por la puerta con forma de mujer a la habitación de al lado, frená la música y usá la Joya Roja para poder sacar la Placa Caja Música.Ahora, volvé a la otra habitación y usala en la caja musical para poder acceder a una escalera.  
+                        Una vez subas vas a llegar a un comedor. Agarrá la Munición de Pistola, las dos Hierbas Verdes y el objeto que está adentro de la olla, el cual tenés que combinar con las 4 Alas de Libélula. Ahora, volvé a la sala en donde conseguiste 
+                        la última Ala, y esta vez andá por la escalera que está a tu izquierda, lo que te va a llevar a la habitación en donde te atacaron los tentáculos con Claire. Andá a la Save Room, y equipate lo mejor que puedas, te recomiendo ponerte el 
+                        Lanzagranadas con Granadas Verdes, la Mágnum y alguna otra arma fuerte como la Escopeta o la Ballesta con Munición Explosiva, aparte de la Libélula Oro. Una vez estés listo, andá al patio después del pasillo. Al entrar va a saltar una 
+                        cinemática en la que Claire te entrega el Archivo de Seguridad. Comprobálo para poder sacar la Tarjeta de Seguridad, y después subí por las escaleras que están al final del pasillo. Una vez acá, usá la Libélula en la ranura que está al 
+                        lado de la puerta, y entrá por esta. Después de matar a los Zombies, entrá al pasillo que está a la derecha para agarrar una Hierba Verde, y subí las escaleras de mano para llegar al panel de control. Usá la Tarjeta de Seguridad para 
+                        poder acceder al sistema, y cuando te pida la clavé, poné “VERÓNICA” (Cine). Al terminar, se va a activar el sistema de autodestrucción, así que salí rápido a la habitación anterior. Ni bien cruces la puerta, va a saltar una cinemática 
+                        en la que aparece Claire y Alexia los ataca. Cuando recuperes el control, disparale rápido a Alexia para que Claire pueda escapar, lo que va a dar inicio a la pelea final. En la primera fase, Alexia va a ser un bicho amorfo que te ataca 
+                        con tentáculos y spawnea unos enemigos muy molestos. Lo mejor que podes hacer es ponerte en una esquina, ignorar a los enemigos chicos y gastar toda la munición en Alexia, empezando por la más fuerte. Cuando le hagas el suficiente daño, 
+                        va a cambiar a su segunda fase, y vas a poder agarrar el Lanzador de Long. de la pared; con un solo tiro vas a ganar la pelea, aunque es un poco complicado pegarle. Una vez lo hagas, va a saltar la cinemática final, y ya te habrás pasado 
+                        el Resident Evil: Code Verónica X. Sin embargo, aún quedan algunos desafíos extra para completarlo al 100%.    
+                    </p>
                     <div class="checklist-container">
                         <h3 class="checklist-title">Checklist</h3>
                         <div class="checklist-image-container">
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/mapa-base-militar.webp" alt="mapa-base-militar" class="checklist-images">
-                                <p class="text-image">Mapa de la Base Militar</p>
+                                <img src="/html/guias/assets/re-code-veronica/manual-instrucciones.webp" alt="informe-clave-veronica" class="checklist-images">
+                                <p class="text-image">Clave: Informe Verónica</p>
                             </div>
                             <div>
-                                <img src="/html/guias/assets/re-code-veronica/lanzagranadas.webp" alt="lanzagranadas" class="checklist-images">
-                                <p class="text-image">Lanzagranadas</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/ballesta.webp" alt="ballesta" class="checklist-images">
-                                <p class="text-image">Ballesta</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/memorandum-contraseña.webp" alt="memorandum-contraseña" class="checklist-images">
-                                <p class="text-image">Memorándum Sobre el Número de Contraseña</p>
+                                <img src="/html/guias/assets/re-code-veronica/lanzador-long.webp" alt="lanzador-long" class="checklist-images">
+                                <p class="text-image">Lanzador de Long.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="div10" class="tab">
-                    <h2>Antartica 2 (Chris)</h2>
-                    <p class="guide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae maiores quas sunt perferendis corrupti dolores dolorum veritatis eius! Ipsam molestias fugiat non repellat facilis consequatur obcaecati nam consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim iste veritatis numquam quisquam, veniam eaque, laudantium minima assumenda debitis, iure tenetur aut! Officia beatae modi ipsum rerum, nam ullam. </p>
-                    <div class="checklist-container">
-                        <h3 class="checklist-title">Checklist</h3>
-                        <div class="checklist-image-container">
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/mapa-base-militar.webp" alt="mapa-base-militar" class="checklist-images">
-                                <p class="text-image">Mapa de la Base Militar</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/lanzagranadas.webp" alt="lanzagranadas" class="checklist-images">
-                                <p class="text-image">Lanzagranadas</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/ballesta.webp" alt="ballesta" class="checklist-images">
-                                <p class="text-image">Ballesta</p>
-                            </div>
-                            <div>
-                                <img src="/html/guias/assets/re-code-veronica/memorandum-contraseña.webp" alt="memorandum-contraseña" class="checklist-images">
-                                <p class="text-image">Memorándum Sobre el Número de Contraseña</p>
-                            </div>
-                        </div>
+                    <h2>Lanzador de Plasma Infinito</h2>
+                    <p class="guide-text">
+                        Para desbloquearlo, hay que terminar el juego con una calificación de A, esto implica que tenés que pasarte juego en menos de 4:30hs, no usar Aerosoles para curarte (solo hierbas), no guardar y salvar a Rodrigo y a 
+                        Steve.
+                    </p>
+                    <br>
+                    <br>
+                    <h2>Modo Batalla</h2>
+                    <p class="guide-text">
+                        Se desbloquea al completar al juego por primera vez. Inicialmente, solo vas a poder jugar con Claire y Chris. Si conseguiste la Lunger en la Base Militar, vas a poder jugar con Steve. También poodés desbloquear 
+                        tanto a una Claire alternativa como a Albert Wesker tras completar el modo batalla con Claire y Chris respectivamente, sin importar la calificación. Al conseguir el rango A con todos los personajes, vas a desbloquear
+                        el Lanzador Lineal infinito para el modo batalla. Los tiempos para conseguir las calificaciones son los siguientes:
+                    </p>
+                    <div class="table-div">
+                        <table class="rango-a">
+                            <tr>
+                                <th>Personaje</th>
+                                <th>Tiempo para rango A</th>
+                            </tr>
+                            <tr>
+                                <td class="table-neme">Claire</td>
+                                <td>6':09":99 o menos</td>
+                            </tr>
+                            <tr>
+                                <td class="table-neme">Claire Alternativa</td>
+                                <td class="table-neme">7':59":99 o menos</td>
+                            </tr>
+                            <tr>
+                                <td class="table-neme">Chris</td>
+                                <td>6':29":99 o menos</td>
+                            </tr>
+                            <tr>
+                                <td class="table-neme">Steve</td>
+                                <td>9':59":99 o menos</td>
+                            </tr>
+                            <tr>
+                                <td class="table-neme">Wesker</td>
+                                <td>59':59":99 o menos</td>
+                            </tr>
+                        </table>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -560,5 +729,6 @@
             <p>© 2025 Game Scrolls. Todos los derechos reservados.</p>
     </footer>
     <script src="../../js/guidemenu.js"></script>
+    <script src="../../js/register.js"></script>
 </body>
 </html>

@@ -42,13 +42,26 @@
                 <img src="assets/logo-gamescrolls.png" alt="logo GameScrolls" class="logo escala">
             </a>
             <nav class="navbar">
-                <a href="index.html" class="escala href-normalizado">Inicio</a>
-                <a href="html/guias.html" class="escala href-normalizado">Guías</a>
-                <a href="html/foro.html" class="escala href-normalizado">Discusión</a>
-                <i class="fa fa-user-circle fa-2x user-icon escala onclick" aria-hidden="true" id="user"></i>
+                <a href="index.html" class="escala href-normalizado link-hover">Inicio</a>
+                <a href="html/guias.html" class="escala href-normalizado link-hover">Guías</a>
+                <a href="html/foro.html" class="escala href-normalizado link-hover">Discusión</a>
+                <i class="fa fa-user-circle fa-2x user-icon escala onclick link-hover" aria-hidden="true" id="user" data-open-modal></i>
             </nav>
     </header>
     <main>
+        <div class="registro">
+            <dialog class="container" data-modal>
+                <form class="login" method="dialog">
+                    <h2 class="login-h2">Iniciar Sesion</h2>
+                    <input type="text" placeholder="Usuario" class="input-field">
+                    <input type="password" placeholder="Contraseña" class="input-field">
+                    <button class="submit-btn pointer escala">Iniciar Sesion</button>
+                </form>
+                <div class="change-menu">
+                    <p class="span">¿No tienes una cuenta? Registrate <a href="" class="href-normalizado link-hover">aca</a></p>
+                </div>
+            </dialog>
+        </div>
         <div class="content">
                 <h1 class="page-title">GameScrolls</h1>
                 <p class="description">Bienvenido a la página donde encontraras guías completas y detalladas de tus juegos favoritos</p>

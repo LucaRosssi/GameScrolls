@@ -1,7 +1,8 @@
 :root {
     --primary-text-color: rgb(0, 0, 0);
     --primary-register-font-color: #041a98;
-    --header-height: 80px;
+    --hover-text-color: #c6bb7f;
+    --header-height: 60px;
     --navbar-link-color: aliceblue;
     --navbar-background-color: #3e1b04;
     --guide-font: 'Poppins', sans-serif;
@@ -53,6 +54,10 @@
     cursor:pointer
 }
 
+.link-hover:hover {
+    color: var(--hover-text-color);
+}
+
 /*Nav*/
 
 header {
@@ -61,7 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    height: 60px;
+    height: var(--header-height);
     padding: 10px;
     font-size: 1.2rem;
     /* Prevents content from overflowing the header */
@@ -92,10 +97,6 @@ header {
     transition: color 0.1s;
 }
 
-.navbar a:hover, .navbar i:hover {
-    color: #c6bb7f;
-}
-
 .user-icon {
     font-size: 27px;
 }
@@ -111,14 +112,15 @@ header {
 }
 
 .container {
-    position: relative;
     width: 300px;
-    height: auto;
     border: 2px solid #000;
+    top: var(--header-height);
+    left: auto;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
     background-color: #3e1b04;
+    margin: 5px;
 }
 
 .login-h2 {
@@ -179,13 +181,9 @@ header {
     border-radius: 5px;
 }
 
-.span {
-    color: var(--primary-text-color);
-    font-size: 13px;
-}
-
 .span, a {
-    color: var(--primary-text-color);
+    color: var(--navbar-link-color);
+    font-size: 13px;
 }
 
 /*Main*/
@@ -460,3 +458,31 @@ main {
 .menu-list-item {
     padding: 5px;
 } */ 
+
+.table-div table {
+    margin: 40px auto;
+}
+
+.rango-a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    border: 1px solid #000;
+}
+
+.table-neme {
+    border-collapse: collapse;
+    padding-right: 20px;
+}
+
+th {
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-link-color);
+}
+
+@media (max-width: 1180px) {
+    .guide {
+    margin: 0px 25px;
+}
+}
